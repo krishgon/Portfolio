@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onresize="toggleScreenMode();">
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            Krish Agrawal
+            <div class="toggleButton"><img src="assets/menu_white_36dp.svg" alt="Toggle menu icon" onclick="toggleMenu();" id="menuToggleButton"></div>
+        </div>
+        <div class="menu">
+            <div class="menuItems">
+                <div class="active">Home</div>
+                <div>My projects</div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="personStanding">
+            <img src="assets/boyStanding.png" alt="boy checking his mobile">
+        </div>
+        <div class="myDescription">
+            <div class="myText">
+                <div class="title">Who am I?</div>
+                <div class="body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+                <div class="button"><input type="button" value="Connect/Contact" onclick="showSocials();"></div>
+            </div>
+            <div class="myPic">
+                <img src="assets/newProfilePic.jpeg" alt="my photo">
+            </div>
+        </div>
+    </div>
+    <div class="interests">
+        <div class="mainSection">
+            <div class="title">I<br>N<br>T<br>E<br>R<br>E<br>S<br>T<br>S</div>
+            <div class="greenBox"></div>
+            <div class="infoBox guitar">
+                <div class="title">Guitar</div>
+                <div class="content">d ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo.</div>
+            </div>
+            <div class="infoBox sports">
+                <div class="title">Sports</div>
+                <div class="content">d ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo.</div>
+            </div>
+            <div class="infoBox philosophy">
+                <div class="title">Philosophy</div>
+                <div class="content">d ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo.</div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/boyPlayingFootbal.png" alt="boy playing footbal">
+        </div>
+    </div>
+    <div class="socials" id="socials">
+        <div class="title">My Socials</div>
+        <div class="socialContainer">
+            <div class="discord">
+                <div class="mainBox">
+                    <div class="imageBox">
+                        <img src="assets/Discord-classic.png" alt="Discord">
+                    </div>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
+                </div>
+                <div class="followButton"><input type="button" value="View Profile" onclick="showProfile('discord');"></div>
+            </div>
+            <div class="twitter">
+                <div class="mainBox">
+                    <div class="imageBox">
+                        <img src="assets/twitter-logo.png" alt="Discord">
+                    </div>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
+                </div>
+                <div class="followButton"><input type="button" value="View Profile" onclick="showProfile('twitter');"></div>
+            </div>
+            <div class="youtube">
+                <div class="mainBox">
+                    <div class="imageBox">
+                        <img src="assets/youtube-logo.png" alt="Discord">
+                    </div>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
+                </div>
+                <div class="followButton"><input type="button" value="View Profile" onclick="showProfile('youtube');"></div>
+            </div>
+            <div class="reddit">
+                <div class="mainBox">
+                    <div class="imageBox">
+                        <img src="assets/reddit-logo.png" alt="Discord">
+                    </div>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
+                </div>
+                <div class="followButton"><input type="button" value="View Profile" onclick="showProfile('reddit');"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Made in vanilla html, css, js by Krish Agrawal
+    </div>
+</body>
+
+</html>
