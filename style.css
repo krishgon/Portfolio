@@ -493,7 +493,7 @@ body {
         justify-content: center;
     }
     .personStanding>img {
-        height: 300px;
+        height: 250px;
     }
     .myDescription {
         padding-left: 4vw;
@@ -549,4 +549,63 @@ body {
     .myPic > img{
         width: 60%;
     }
+
+    .interests {
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .interests > .image {
+        margin-bottom: 8vh;
+    }
+    .interests > .image > img {
+        height: 300px;
+    }
+    .mainSection{
+        order: 1;
+        grid-template-columns: none;
+        grid-template-rows: max-content 1fr 1fr 1fr;
+        /* align-items: center; */
+        background-color: var(--lightGreen);
+        border-radius: 50px;
+        padding: 4vh 4vw 4vh 4vw;
+    }
+    .mainSection > .title {
+        width: 100%;
+        text-align: center;
+        display: block;
+        grid-column: 1 / 2;
+        grid-row: auto;
+        padding: 0px;
+        margin-bottom: 2vh;
+    }
+    .greenBox { 
+        display: none;
+    }
+    .infoBox {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        border-radius: 50px;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+    .infoBox > .title {
+        text-align: center;
+    }
+    .infoBox > .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .guitar {
+        margin-top: 2vh;
+    }
 }
+
