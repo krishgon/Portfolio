@@ -493,7 +493,7 @@ body {
         justify-content: center;
     }
     .personStanding>img {
-        height: 250px;
+        height: 35vh;
     }
     .myDescription {
         padding-left: 4vw;
@@ -561,7 +561,7 @@ body {
         margin-bottom: 8vh;
     }
     .interests > .image > img {
-        height: 300px;
+        height: 40vh;
     }
     .mainSection{
         order: 1;
@@ -606,6 +606,24 @@ body {
     }
     .guitar {
         margin-top: 2vh;
+    }
+
+    .socials {
+        padding: 8vh 4vw 8vh 4vw;
+    }
+    .socialContainer {
+        margin-top: 6vh;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .socialContainer > div {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        margin-bottom: 4vh;
+    }
+    
+    .footer {
+        padding: 2vh 0vw 2vh 0vw;
     }
 }
 

@@ -43,6 +43,7 @@ function toggleScreenMode(){
         document.getElementsByClassName("menu")[0].style.display = "flex";
         changeAboutHtml(false);
     }else{
+        document.getElementsByClassName("menu")[0].style.display = "none";
         changeAboutHtml(true);
     }
 }
