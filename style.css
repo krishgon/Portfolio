@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-
 * {
     margin: 0%;
     box-sizing: border-box;
@@ -21,7 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     color: white;
     width: 100vw;
     height: 100vh;
@@ -36,13 +35,10 @@ body{
     background: rgba(0, 0, 0, 0.1);
 }
 
-
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
 }
-
-
 
 .navbar {
     position: fixed;
@@ -53,7 +49,6 @@ body{
     display: flex;
     justify-content: space-between;
     transition: top 0.3s;
-
     padding-left: 12rem;
     padding-right: 12rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
@@ -63,23 +58,21 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
-
     height: 100%;
     position: absolute;
     right: 0;
     margin-right: 4vw;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
-
     color: var(--skinColor);
     font-family: 'Bebas Neue', cursive;
     font-size: 2.3rem;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -92,32 +85,29 @@ body{
     height: 100%;
 }
 
-.menuItems > div {
+.menuItems>div {
     padding: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s;
-
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
 }
 
-.menuItems > div:hover:not(.active) {
+.menuItems>div:hover:not(.active) {
     color: var(--darkOrange);
 }
-
 
 .active {
     background-color: var(--darkOrange);
 }
 
-.about{
+.about {
     margin-top: 8rem;
     padding-left: 13rem;
     display: grid;
@@ -130,7 +120,7 @@ body{
     align-items: center;
 }
 
-.personStanding > img{
+.personStanding>img {
     height: 400px;
 }
 
@@ -139,10 +129,8 @@ body{
     border-radius: 155px 0px 0px 155px;
     padding-left: 8rem;
     padding-right: 4rem;
-
     display: grid;
     grid-template-columns: 60fr 40fr;
-
     box-shadow: 0px 5px 10px grey;
 }
 
@@ -150,28 +138,26 @@ body{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 3rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.myText > .title {
+.myText>.title {
     font-family: 'Roboto Slab', serif;
     font-size: 3rem;
 }
 
-.myText > .body {
+.myText>.body {
     padding-top: 0.5rem;
     padding-left: 0.5rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
 
-.myText > .button > input{
+.myText>.button>input {
     margin-top: 1rem;
     margin-left: 0.5rem;
-
     padding: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -180,14 +166,13 @@ body{
     background-color: var(--lightOrange);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
     transition: 0.3s;
-
     font-family: 'Roboto Slab', serif;
     font-size: 1.2rem;
     font-weight: 500;
     color: white;
 }
 
-.myText > .button > input:hover {
+.myText>.button>input:hover {
     opacity: 80%;
 }
 
@@ -196,7 +181,7 @@ body{
     align-items: center;
 }
 
-.myPic > img {
+.myPic>img {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
@@ -204,7 +189,6 @@ body{
 
 .interests {
     margin-top: 8rem;
-
     display: grid;
     grid-template-columns: 50fr 50fr;
 }
@@ -215,16 +199,13 @@ body{
     grid-template-rows: 6fr 23fr 5fr 23fr 5fr 23fr 6fr;
 }
 
-.mainSection > .title{
+.mainSection>.title {
     background-color: var(--lightGreen);
     padding: 2rem;
-
     grid-row: 1 / 21;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: white;
     font-family: 'Roboto Slab', serif;
     font-size: 2.5rem;
@@ -232,13 +213,13 @@ body{
     font-weight: 500;
 }
 
-.interests > .image {
+.interests>.image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.interests > .image > img {
+.interests>.image>img {
     height: 400px;
 }
 
@@ -246,11 +227,10 @@ body{
     grid-row: 1 / 21;
     grid-column: 2 / 3;
     background-color: var(--lightGreen);
-
     border-radius: 0px 50px 50px 0px;
 }
 
-.infoBox{
+.infoBox {
     background-color: var(--darkGreen);
     border-radius: 4px 50px 50px 4px;
     padding: 1rem;
@@ -259,22 +239,21 @@ body{
     padding-right: 1.5rem;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);
     font-family: 'Roboto', sans-serif;
-
     grid-column: 2 / 4;
     grid-row-end: span 1;
 }
 
-.infoBox > .title {
+.infoBox>.title {
     font-size: 1.8rem;
     line-height: 1.6;
     font-family: 'Roboto Slab', serif;
 }
 
-.infoBox > .content {
+.infoBox>.content {
     font-size: 1rem;
 }
 
-.guitar{
+.guitar {
     grid-row-start: 2;
 }
 
@@ -296,9 +275,8 @@ body{
     background-color: var(--whiteOrange);
 }
 
-.socials > .title {
+.socials>.title {
     text-align: center;
-
     color: var(--apnaBlack);
     font-family: 'Roboto Slab', serif;
     font-size: 3rem;
@@ -306,28 +284,25 @@ body{
 
 .socialContainer {
     margin-top: 5rem;
-
     display: grid;
     grid-template-columns: 45fr 10fr 45fr;
     grid-template-rows: 45fr 10fr 45fr;
 }
 
-.socialContainer > div {
+.socialContainer>div {
     display: grid;
     grid-template-columns: none;
     grid-template-rows: 70fr 30fr;
-    
-
     color: var(--apnaBlack);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-.discord > .mainBox {
+.discord>.mainBox {
     background-color: #E0E3FF;
 }
 
-.discord > .followButton > input{
+.discord>.followButton>input {
     background-color: #6773F8;
 }
 
@@ -336,11 +311,11 @@ body{
     grid-row: 1 / 2;
 }
 
-.twitter > .mainBox {
+.twitter>.mainBox {
     background-color: #D9F2FF;
 }
 
-.twitter > .followButton > input{
+.twitter>.followButton>input {
     background-color: #44B5EF;
 }
 
@@ -349,11 +324,11 @@ body{
     grid-row: 3 / 4;
 }
 
-.youtube > .mainBox {
+.youtube>.mainBox {
     background-color: #FFD4D4;
 }
 
-.youtube > .followButton > input{
+.youtube>.followButton>input {
     background-color: #FF3232;
 }
 
@@ -362,11 +337,11 @@ body{
     grid-row: 3 / 4;
 }
 
-.reddit > .mainBox {
+.reddit>.mainBox {
     background-color: #FFD1C0;
 }
 
-.reddit > .followButton > input{
+.reddit>.followButton>input {
     background-color: #FF5E22;
 }
 
@@ -375,7 +350,6 @@ body{
     padding-left: 0px;
     border-radius: 30px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-
     display: grid;
     grid-template-columns: 20fr 80fr;
     grid-template-rows: none;
@@ -387,30 +361,29 @@ body{
     justify-content: center;
 }
 
-.mainBox > .imageBox > img {
+.mainBox>.imageBox>img {
     width: auto;
     height: 5rem;
 }
 
-.mainBox > p {
+.mainBox>p {
     align-self: center;
 }
 
-.followButton > input{
+.followButton>input {
     height: 100%;
     width: 100%;
     border-width: 0px;
     border-radius: 30px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     transition: 0.3s;
-
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     font-weight: 300;
 }
 
-.followButton > input:hover {
+.followButton>input:hover {
     background-color: var(--darkOrange);
     opacity: 80%;
 }
@@ -423,65 +396,62 @@ body{
     font-weight: 100;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .menu {
         display: flex;
     }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
     .navbar {
         padding-left: 6rem;
         padding-right: 6rem;
     }
-
-    .about{
+    .about {
         padding-left: 3rem;
     }
-    .myDescription{
+    .myDescription {
         padding-left: 7rem;
         padding-right: 2rem;
     }
-    .myText > .title {
+    .myText>.title {
         font-size: 2rem;
     }
-    .myText > .body {
+    .myText>.body {
         font-size: 0.95rem;
     }
-    .myText > .button > input {
+    .myText>.button>input {
         font-size: 1rem;
         padding: 0.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
-    .mainSection > .title {
+    .mainSection>.title {
         font-size: 2rem;
     }
-    .infoBox > .title {
+    .infoBox>.title {
         font-size: 1.6rem;
     }
-    .infoBox > .content {
+    .infoBox>.content {
         font-size: 0.8rem;
     }
-
     .socials {
         padding-left: 5rem;
         padding-right: 5rem;
     }
-    .socials > .title {
+    .socials>.title {
         font-size: 2.5rem;
     }
-    .socialContainer > div {
+    .socialContainer>div {
         grid-template-rows: 75fr 25fr;
     }
-    .mainBox > p {
+    .mainBox>p {
         font-size: 0.9rem;
     }
 }
 
-@media only screen and (max-width: 768px){
-    .body{
+@media only screen and (max-width: 768px) {
+    .body {
         overflow-x: hidden;
     }
     .navbar {
@@ -492,14 +462,14 @@ body{
         padding-bottom: 2vh;
         height: max-content;
     }
-    .logo{
+    .logo {
         justify-content: center;
         font-size: 2.5rem;
     }
     .toggleButton {
         display: flex;
     }
-    .menu{
+    .menu {
         display: none;
         justify-content: center;
         margin-top: 2vh;
@@ -510,11 +480,73 @@ body{
         grid-template-rows: 1fr 1fr;
         width: 100%;
     }
-    .menuItems > div {
+    .menuItems>div {
         border-radius: 20px;
     }
-
     .about {
         padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .personStanding {
+        justify-content: center;
+    }
+    .personStanding>img {
+        height: 300px;
+    }
+    .myDescription {
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        margin-top: 4vh;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .myDescription>.title {
+        order: 1;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        font-size: 2.5rem;
+    }
+    .myDescription>.body {
+        order: 3;
+        margin-top: 2vh;
+        padding-top: 0px;
+        padding-left: 0px;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    .myDescription>.button {
+        order: 4;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+    }
+    .myDescription>.button>input {
+        margin: 0px;
+        font-size: 1.2rem;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-width: 0px;
+        border-radius: 30px;
+        background-color: var(--lightOrange);
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        transition: 0.3s;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        color: white;
+    }
+    .myPic {
+        margin-top: 2vh;
+        order: 2;
+        justify-content: center;
+    }
+    .myPic > img{
+        width: 60%;
     }
 }

@@ -12,6 +12,12 @@ window.onscroll = function() {
     prevScrollpos = currentScrollpos;
 }
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    if(window.outerWidth <= 768){
+        changeAboutHtml(true);
+    }
+});
+
 
 function showSocials(){
     open("#socials", "_self");
@@ -35,6 +41,9 @@ function showProfile(platform){
 function toggleScreenMode(){
     if(window.outerWidth > 768){
         document.getElementsByClassName("menu")[0].style.display = "flex";
+        changeAboutHtml(false);
+    }else{
+        changeAboutHtml(true);
     }
 }
 
@@ -48,5 +57,14 @@ function toggleMenu(){
     }else{
         menu.style.display = "none";
         toggleButton.src = "assets/menu_white_36dp.svg";
+    }
+}
+
+function changeAboutHtml(forMobile){
+    var des = document.getElementsByClassName('myDescription')[0];
+    if(forMobile){
+        des.innerHTML = "\n    <div class=\"title\">Who am I?</div>\n    <div class=\"body\">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque\n      laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto\n      beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit\n      aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque\n      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non\n      numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>\n    <div class=\"button\"><input type=\"button\" value=\"Connect/Contact\" onclick=\"showSocials();\"></div>\n    <div class=\"myPic\">\n      <img src=\"assets/newProfilePic.jpeg\" alt=\"my photo\">\n    </div>\n  ";
+    }else{
+        des.innerHTML = "\n            <div class=\"myText\">\n                <div class=\"title\">Who am I?</div>\n                <div class=\"body\">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque\n                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto\n                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit\n                    aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque\n                    porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non\n                    numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>\n                <div class=\"button\"><input type=\"button\" value=\"Connect/Contact\" onclick=\"showSocials();\"></div>\n            </div>\n            <div class=\"myPic\">\n                <img src=\"assets/newProfilePic.jpeg\" alt=\"my photo\">\n            </div>\n        ";
     }
 }
